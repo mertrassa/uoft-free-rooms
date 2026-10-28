@@ -1,0 +1,18 @@
+{
+  "20269": {
+    "classesStart": "2026-09-08",
+    "classesEnd": "2026-12-08",
+    "noClasses": [
+      { "start": "2026-10-12", "end": "2026-10-12", "label": "Thanksgiving" },
+      { "start": "2026-10-26", "end": "2026-10-30", "label": "Fall Reading Week" }
+    ]
+  },
+  "20271": {
+    "classesStart": "2027-01-11",
+    "classesEnd": "2027-04-12",
+    "noClasses": [
+      { "start": "2027-02-15", "end": "2027-02-19", "label": "Winter Reading Week" },
+      { "start": "2027-03-26", "end": "2027-03-26", "label": "Good Friday" }
+    ]
+  }
+}
