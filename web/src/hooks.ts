@@ -77,6 +77,7 @@ export function readUrl(search = window.location.search): UrlState {
       size: size && Object.hasOwn(SIZES, size) ? size : DEFAULT_FILTERS.size,
       tables: p.get("tables") === "1",
       starredOnly: p.get("starred") === "1",
+      dept: p.get("labs") === "1",
     },
     query: p.get("q") ?? "",
     demo: p.get("demo") === "1",
@@ -94,6 +95,7 @@ export function writeUrl(s: UrlState) {
   if (s.filters.size !== "any") p.set("size", s.filters.size);
   if (s.filters.tables) p.set("tables", "1");
   if (s.filters.starredOnly) p.set("starred", "1");
+  if (s.filters.dept) p.set("labs", "1");
   if (s.query) p.set("q", s.query);
   const qs = p.toString();
   window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);

@@ -4,6 +4,8 @@ export interface Room {
   capacity: number | null;
   seating: string | null;
   writing: string | null;
+  /** A lab or departmental room LSM doesn't list, known only from classes held there. */
+  dept?: boolean;
 }
 
 export interface Building {

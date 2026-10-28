@@ -116,8 +116,7 @@ export function BuildingCard({
   onToggleRoom: (key: string) => void;
   onStar: (key: string) => void;
 }) {
-  const { building, freeCount, inUse, hourly, exact } = view;
-  const total = building.rooms.length;
+  const { building, freeCount, inUse, hourly, exact, total } = view;
   const load = total ? Math.min(1, inUse / total) : 0;
   const level = !view.hasData ? "nodata" : load >= 0.85 ? "full" : load >= 0.5 ? "mid" : "quiet";
   const peak = Math.max(total, ...hourly, 1);
@@ -225,9 +224,9 @@ function RoomRow({
 }) {
   const { room } = view;
   const pill = statusPill(view, minute);
-  const meta = [room.capacity ? `${room.capacity} seats` : null, room.seating, room.writing]
-    .filter(Boolean)
-    .join(" · ");
+  const meta = room.dept
+    ? "Lab or department room · may need card access or be booked outside classes"
+    : [room.capacity ? `${room.capacity} seats` : null, room.seating, room.writing].filter(Boolean).join(" · ");
   return (
     <li className={`room ${open ? "open" : ""}`} id={`r-${view.key.replace(" ", "-")}`}>
       <div className="room-head" role="button" tabIndex={0} aria-expanded={open} onClick={onToggle}

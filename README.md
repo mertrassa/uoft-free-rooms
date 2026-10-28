@@ -14,6 +14,10 @@ Find empty classrooms at UofT St. George to study in.
 - **Term calendar**: knows reading weeks, holidays and term start/end, says when no classes run, and marks those days in the date picker.
 - **"Free for at least" filter** (30 min to 3 hours), **room size**, **full desks** (hides the ~100 rooms with
   only tablet-arm chairs, labs, or no writing surface).
+- **Labs & dept rooms** (off by default): adds the ~170 labs and departmental rooms that classes meet
+  in but LSM doesn't list (e.g. BA 3145), with Busy/Free from their classes. They may need card
+  access and can be booked outside class times, so they're never Best bets and have no seat counts.
+  Searching for one by name ("BA 3145") shows it either way.
 - **Light, dark or auto theme**, remembered per browser.
 - **Best bets**: the rooms that stay free longest from the chosen time, one per building. Shown only where room schedules are known.
 - **Room timelines**: tap a room to see its classes that day.
@@ -103,6 +107,8 @@ emptier than they are. Joint courses (e.g. CSC469H1 with CSC2208H) count once. W
 the building but not the room, so the app estimates free rooms per building (classrooms minus
 classes in session) and marks those counts with "~". A building switches to exact status once at
 least 90% of its meetings carry a room. Classes in rooms LSM doesn't book (labs, studios,
-departmental rooms) count as placed, since they don't occupy a listed classroom. A room stays busy
+departmental rooms) count as placed, since they don't occupy a listed classroom; `build_data.py` adds
+those rooms (marked `dept`) to buildings LSM lists. Another ~100 such rooms are in buildings LSM
+doesn't list at all and aren't shown, since we have no names or addresses for them. A room stays busy
 through back-to-back classes (gaps of 10 minutes or less). Buildings with no classes at all in our
 sources (Exam Centre, Rehabilitation Sciences) show "No class data" instead of a count.

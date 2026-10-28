@@ -23,9 +23,11 @@ export interface Filters {
   size: Size;
   tables: boolean;
   starredOnly: boolean;
+  /** Also show labs and departmental rooms (often card-access, and their own bookings aren't known). */
+  dept: boolean;
 }
 
-export const DEFAULT_FILTERS: Filters = { minFor: 0, size: "any", tables: false, starredOnly: false };
+export const DEFAULT_FILTERS: Filters = { minFor: 0, size: "any", tables: false, starredOnly: false, dept: false };
 
 export type RoomStatus =
   | { kind: "busy"; course: string; until: number }
@@ -47,6 +49,8 @@ export interface BuildingView {
   exact: boolean;
   /** False when no class is ever scheduled here, so we can't say anything about it. */
   hasData: boolean;
+  /** Rooms counted here: the classrooms, plus labs and departmental rooms when shown. */
+  total: number;
   /** Classes in session at the selected time. */
   inUse: number;
   /** Rooms passing the filters that are free for the whole window (an estimate unless exact). */
@@ -94,6 +98,7 @@ const active = (m: Meeting, minute: number) => m[3] <= minute && minute < m[4];
 
 export function roomMatches(room: Room, key: string, f: Filters, starred: Set<string>): boolean {
   const size = SIZES[f.size] ?? SIZES.any;
+  if (room.dept && !f.dept) return false;
   if (f.size !== "any" && (room.capacity == null || room.capacity < size.min || room.capacity > size.max)) return false;
   // "Tables" as a whole word: LSM's "Tablet Arm" desks don't fit a laptop and notes.
   if (f.tables && !/\btables?\b/i.test(room.writing ?? "")) return false;
@@ -122,6 +127,9 @@ export function viewBuilding(
   const exact = index.exactBuildings.has(b.code) || !at.classes;
   const hasData = index.byBuilding.has(b.code) || !at.classes;
   const known = new Set(b.rooms.map((r) => r.room));
+  // Hidden labs don't take up a classroom, so their classes don't count against the free ones.
+  const hidden = new Set(filters.dept ? [] : b.rooms.filter((r) => r.dept).map((r) => r.room));
+  const total = b.rooms.length - hidden.size;
   const { minute } = at;
 
   const all = b.rooms.map((room): RoomView => {
@@ -138,11 +146,13 @@ export function viewBuilding(
     if (exact) return { room, key, today, status: { kind: "free", until: next ? next[3] : null } };
     return { room, key, today, status: { kind: "unknown" } };
   });
-  const rooms = all.filter((v) => roomMatches(v.room, v.key, filters, starred) && (!only || only(v.key)));
+  // Searching for a lab by name ("BA 3145") shows it even with labs hidden.
+  const shown = only ? { ...filters, dept: true } : filters;
+  const rooms = all.filter((v) => roomMatches(v.room, v.key, shown, starred) && (!only || only(v.key)));
 
   // Classes at time t: rooms known to be busy plus meetings we can't place in a room.
   const inUseAt = (t: number) => {
-    const now = meetings.filter((m) => active(m, t));
+    const now = meetings.filter((m) => active(m, t) && !hidden.has(m[1]));
     return new Set(now.filter((m) => known.has(m[1])).map((m) => m[1])).size +
       now.filter((m) => !known.has(m[1])).length;
   };
@@ -160,13 +170,13 @@ export function viewBuilding(
       meetings.filter((m) => known.has(m[1]) && m[3] < minute + Math.max(filters.minFor, 1) && minute < m[4]).map((m) => m[1]),
     );
     const candidates = rooms.filter((v) => !knownBusy.has(v.room.room)).length;
-    freeCount = Math.max(0, Math.min(candidates, b.rooms.length - peak));
+    freeCount = Math.max(0, Math.min(candidates, total - peak));
   }
 
   const hourly: number[] = [];
   for (let t = DAY_START; t < DAY_END; t += 60) hourly.push(meetings.filter((m) => active(m, t + 30)).length);
 
-  return { building: b, exact, hasData, inUse: inUseAt(minute), freeCount, rooms, hourly };
+  return { building: b, exact, hasData, total, inUse: inUseAt(minute), freeCount, rooms, hourly };
 }
 
 export interface Pick {
@@ -184,7 +194,8 @@ export function topPicks(views: BuildingView[], minute: number, minFor: number, 
   for (const bv of views) {
     if (!bv.exact) continue;
     for (const v of bv.rooms) {
-      if (v.status.kind === "free" && freeFor(v.status, minute, minFor)) {
+      // Labs may be locked or booked by their department: never a best bet.
+      if (!v.room.dept && v.status.kind === "free" && freeFor(v.status, minute, minFor)) {
         picks.push({ building: bv.building, view: v, until: v.status.until });
       }
     }

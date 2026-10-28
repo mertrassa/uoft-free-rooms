@@ -102,7 +102,7 @@ export default function App() {
           Number(starred.has(z.building.code)) - Number(starred.has(a.building.code)) ||
           Number(z.hasData) - Number(a.hasData) ||
           z.freeCount - a.freeCount ||
-          a.inUse / a.building.rooms.length - z.inUse / z.building.rooms.length,
+          a.inUse / (a.total || 1) - z.inUse / (z.total || 1),
       );
   }, [data, index, query, day, minute, filters, starred, termDay.classes]);
 
@@ -206,6 +206,14 @@ export default function App() {
               onClick={() => setFilter("tables", !filters.tables)}
             >
               Full desks
+            </button>
+            <button
+              className={`toggle ${filters.dept ? "on" : ""}`}
+              aria-pressed={filters.dept}
+              title="Also show labs and department rooms that classes meet in but the central classroom list leaves out. They may need card access, and their department can book them outside class times. No seat counts."
+              onClick={() => setFilter("dept", !filters.dept)}
+            >
+              Labs &amp; dept rooms
             </button>
             <button className={`toggle ${filters.starredOnly ? "on" : ""}`} aria-pressed={filters.starredOnly}
               onClick={() => setFilter("starredOnly", !filters.starredOnly)}>
