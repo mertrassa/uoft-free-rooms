@@ -1,0 +1,3342 @@
+[
+ {
+  "building": "AB",
+  "buildingName": "Astronomy and Astrophysics",
+  "address": "50 St. George Street",
+  "room": "107",
+  "label": "107",
+  "capacity": 70,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "AB",
+  "buildingName": "Astronomy and Astrophysics",
+  "address": "50 St. George Street",
+  "room": "114",
+  "label": "114",
+  "capacity": 37,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "AH",
+  "buildingName": "Muzzo Family Alumni Hall",
+  "address": "121 St. Joseph Street",
+  "room": "100",
+  "label": "100 St. Michaels Theatre",
+  "capacity": 275,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "AP",
+  "buildingName": "Anthropology Building",
+  "address": "19 Ursula Franklin Street",
+  "room": "120",
+  "label": "120",
+  "capacity": 35,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "AP",
+  "buildingName": "Anthropology Building",
+  "address": "19 Ursula Franklin Street",
+  "room": "124",
+  "label": "124",
+  "capacity": 23,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1130",
+  "label": "1130 Auditorium",
+  "capacity": 159,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1160",
+  "label": "1160 Adel Sedra Auditorium",
+  "capacity": 277,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1170",
+  "label": "1170 Auditorium",
+  "capacity": 130,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1180",
+  "label": "1180",
+  "capacity": 130,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1190",
+  "label": "1190 Auditorium",
+  "capacity": 124,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1200",
+  "label": "1200",
+  "capacity": 83,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1210",
+  "label": "1210",
+  "capacity": 83,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1220",
+  "label": "1220",
+  "capacity": 83,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1230",
+  "label": "1230",
+  "capacity": 59,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "1240",
+  "label": "1240",
+  "capacity": 59,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2135",
+  "label": "2135 S",
+  "capacity": 46,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2139",
+  "label": "2139",
+  "capacity": 42,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2145",
+  "label": "2145",
+  "capacity": 48,
+  "seating": "Stacking Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2155",
+  "label": "2155",
+  "capacity": 48,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2159",
+  "label": "2159",
+  "capacity": 42,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2165",
+  "label": "2165",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2175",
+  "label": "2175",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2179",
+  "label": "2179",
+  "capacity": 24,
+  "seating": "Stacking Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2185",
+  "label": "2185",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "2195",
+  "label": "2195",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "B024",
+  "label": "B024",
+  "capacity": 45,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "B025",
+  "label": "B025",
+  "capacity": 25,
+  "seating": "Castered Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "BA",
+  "buildingName": "Bahen Centre Information Tech",
+  "address": "40 St. George Street",
+  "room": "B026",
+  "label": "B026",
+  "capacity": 25,
+  "seating": "Castered Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "BF",
+  "buildingName": "Bancroft Building",
+  "address": "4 Bancroft Avenue",
+  "room": "214",
+  "label": "214",
+  "capacity": 21,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "BF",
+  "buildingName": "Bancroft Building",
+  "address": "4 Bancroft Avenue",
+  "room": "215",
+  "label": "215",
+  "capacity": 40,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "BF",
+  "buildingName": "Bancroft Building",
+  "address": "4 Bancroft Avenue",
+  "room": "315",
+  "label": "315",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "BF",
+  "buildingName": "Bancroft Building",
+  "address": "4 Bancroft Avenue",
+  "room": "316",
+  "label": "316",
+  "capacity": 17,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "BF",
+  "buildingName": "Bancroft Building",
+  "address": "4 Bancroft Avenue",
+  "room": "323",
+  "label": "323",
+  "capacity": 42,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "CH",
+  "buildingName": "Convocation Hall",
+  "address": "31 King's College Circle.",
+  "room": "---",
+  "label": "--- Convocation Hall",
+  "capacity": 1500,
+  "seating": "Theatre Chairs",
+  "writing": "No Writing"
+ },
+ {
+  "building": "EJ",
+  "buildingName": "Edward Johnson Building",
+  "address": "80 Queen's Park",
+  "room": "137A",
+  "label": "137A Mcmillan Theatre",
+  "capacity": 650,
+  "seating": "Theatre Chairs",
+  "writing": "Unknown"
+ },
+ {
+  "building": "EP",
+  "buildingName": "Stewart Building",
+  "address": "149 College Street",
+  "room": "111",
+  "label": "111 TEAL",
+  "capacity": 48,
+  "seating": "Castered Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "ES",
+  "buildingName": "Earth Sciences Centre",
+  "address": "5 Bancroft Avenue",
+  "room": "1047",
+  "label": "1047",
+  "capacity": 25,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "ES",
+  "buildingName": "Earth Sciences Centre",
+  "address": "5 Bancroft Avenue",
+  "room": "1050",
+  "label": "1050 Reichman Family Lect",
+  "capacity": 400,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "ES",
+  "buildingName": "Earth Sciences Centre",
+  "address": "5 Bancroft Avenue",
+  "room": "4000",
+  "label": "4000 Use Bancroft Ave entrance",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "ES",
+  "buildingName": "Earth Sciences Centre",
+  "address": "5 Bancroft Avenue",
+  "room": "4001",
+  "label": "4001 Use Bancroft Ave entrance",
+  "capacity": 48,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "ES",
+  "buildingName": "Earth Sciences Centre",
+  "address": "5 Bancroft Avenue",
+  "room": "B142",
+  "label": "B142 Placer Dome Classroom",
+  "capacity": 94,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "ES",
+  "buildingName": "Earth Sciences Centre",
+  "address": "5 Bancroft Avenue",
+  "room": "B149",
+  "label": "B149 C-I-L Classroom",
+  "capacity": 90,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "EX",
+  "buildingName": "Exam Centre",
+  "address": "255 McCaul Street",
+  "room": "100",
+  "label": "100 Exam Room",
+  "capacity": 309,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "EX",
+  "buildingName": "Exam Centre",
+  "address": "255 McCaul Street",
+  "room": "200",
+  "label": "200",
+  "capacity": 336,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "EX",
+  "buildingName": "Exam Centre",
+  "address": "255 McCaul Street",
+  "room": "300",
+  "label": "300 carrels",
+  "capacity": 90,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "EX",
+  "buildingName": "Exam Centre",
+  "address": "255 McCaul Street",
+  "room": "310",
+  "label": "310",
+  "capacity": 108,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "EX",
+  "buildingName": "Exam Centre",
+  "address": "255 McCaul Street",
+  "room": "320",
+  "label": "320",
+  "capacity": 112,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "EX",
+  "buildingName": "Exam Centre",
+  "address": "255 McCaul Street",
+  "room": "340",
+  "label": "340 Test and Exam Services",
+  "capacity": 67,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "114",
+  "label": "114",
+  "capacity": 301,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "139",
+  "label": "139",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "213",
+  "label": "213 Alternate for LM 155",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "222",
+  "label": "222 Replaces FE 135",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "230",
+  "label": "230 Alternate for LM LM 161",
+  "capacity": 143,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "238",
+  "label": "238 Alternate for IN 209",
+  "capacity": 21,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "24",
+  "label": "24",
+  "capacity": 45,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "240",
+  "label": "240 Alternate for IN 204",
+  "capacity": 41,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "324",
+  "label": "324",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "326",
+  "label": "326 two entrances, 326+327",
+  "capacity": 36,
+  "seating": "Stacking Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "328",
+  "label": "328",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "FE",
+  "buildingName": "Bloor Street West-371",
+  "address": "371 Bloor Steet West",
+  "room": "33",
+  "label": "33",
+  "capacity": 35,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "119",
+  "label": "119",
+  "capacity": 104,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "120",
+  "label": "120",
+  "capacity": 104,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "220",
+  "label": "220",
+  "capacity": 104,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "221",
+  "label": "221",
+  "capacity": 104,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "244",
+  "label": "244",
+  "capacity": 104,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "248",
+  "label": "248",
+  "capacity": 104,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "303",
+  "label": "303",
+  "capacity": 89,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "GB",
+  "buildingName": "Galbraith Building",
+  "address": "35 St. George Street",
+  "room": "304",
+  "label": "304",
+  "capacity": 74,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "GI",
+  "buildingName": "George Ignatieff Theatre",
+  "address": "15 Devonshire Place",
+  "room": "102",
+  "label": "102 George Ignatieff Theatre",
+  "capacity": 178,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "HA",
+  "buildingName": "Haultain Building",
+  "address": "170 College St., (Rear Of)",
+  "room": "401",
+  "label": "401 Loan to LSM 22/23",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "HA",
+  "buildingName": "Haultain Building",
+  "address": "170 College St., (Rear Of)",
+  "room": "403",
+  "label": "403 Loan to LSM",
+  "capacity": 72,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "HA",
+  "buildingName": "Haultain Building",
+  "address": "170 College St., (Rear Of)",
+  "room": "410",
+  "label": "410 Loan to LSM 22/23",
+  "capacity": 50,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "100",
+  "label": "100",
+  "capacity": 34,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "106",
+  "label": "106",
+  "capacity": 84,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "108",
+  "label": "108",
+  "capacity": 54,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "610",
+  "label": "610",
+  "capacity": 251,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "614",
+  "label": "614",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "618",
+  "label": "618",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "696",
+  "label": "696",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "705",
+  "label": "705",
+  "capacity": 15,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "HS",
+  "buildingName": "Health Sciences Building",
+  "address": "155 College Street",
+  "room": "715",
+  "label": "715",
+  "capacity": 16,
+  "seating": "Castered Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "IN",
+  "buildingName": "Innis College",
+  "address": "2 Sussex Avenue",
+  "room": "223E",
+  "label": "223E Seminar Room",
+  "capacity": 19,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "IN",
+  "buildingName": "Innis College",
+  "address": "2 Sussex Avenue",
+  "room": "312E",
+  "label": "312E",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "IN",
+  "buildingName": "Innis College",
+  "address": "2 Sussex Avenue",
+  "room": "313E",
+  "label": "313E",
+  "capacity": 19,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "KP",
+  "buildingName": "Koffler House",
+  "address": "569 Spadina Avenue",
+  "room": "108",
+  "label": "108 Shoppers Drug Mart",
+  "capacity": 187,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "KP",
+  "buildingName": "Koffler House",
+  "address": "569 Spadina Avenue",
+  "room": "113",
+  "label": "113 Carlton Cards",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "LM",
+  "buildingName": "Lash Miller Chemical Labs",
+  "address": "80 St. George Street",
+  "room": "170",
+  "label": "170",
+  "capacity": 203,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "LM",
+  "buildingName": "Lash Miller Chemical Labs",
+  "address": "80 St. George Street",
+  "room": "70",
+  "label": "70",
+  "capacity": 116,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "LM",
+  "buildingName": "Lash Miller Chemical Labs",
+  "address": "80 St. George Street",
+  "room": "75",
+  "label": "75",
+  "capacity": 156,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "MB",
+  "buildingName": "Lassonde Mining Building",
+  "address": "170 College Street",
+  "room": "128",
+  "label": "128",
+  "capacity": 225,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "MC",
+  "buildingName": "Mechanical Engineering Bldg",
+  "address": "5 King's College Road",
+  "room": "102",
+  "label": "102 Lecture Theatre",
+  "capacity": 354,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "MC",
+  "buildingName": "Mechanical Engineering Bldg",
+  "address": "5 King's College Road",
+  "room": "252",
+  "label": "252",
+  "capacity": 133,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MC",
+  "buildingName": "Mechanical Engineering Bldg",
+  "address": "5 King's College Road",
+  "room": "254",
+  "label": "254",
+  "capacity": 134,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "102",
+  "label": "102",
+  "capacity": 196,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "103",
+  "label": "103",
+  "capacity": 196,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "118",
+  "label": "118",
+  "capacity": 30,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "134",
+  "label": "134",
+  "capacity": 92,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "137",
+  "label": "137",
+  "capacity": 92,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "202",
+  "label": "202",
+  "capacity": 196,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MP",
+  "buildingName": "McLennan Physical Laboratories",
+  "address": "255 Huron Street",
+  "room": "203",
+  "label": "203",
+  "capacity": 196,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "2135",
+  "label": "2135",
+  "capacity": 46,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "2158",
+  "label": "2158 JJR Macleod Auditorium",
+  "capacity": 507,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "2170",
+  "label": "2170",
+  "capacity": 140,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "2172",
+  "label": "2172",
+  "capacity": 142,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "2173",
+  "label": "2173",
+  "capacity": 80,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "3153",
+  "label": "3153",
+  "capacity": 274,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "3154",
+  "label": "3154",
+  "capacity": 250,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "4171",
+  "label": "4171",
+  "capacity": 87,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MS",
+  "buildingName": "Medical Sciences Building",
+  "address": "1 King's College Circle",
+  "room": "4279",
+  "label": "4279",
+  "capacity": 87,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "150",
+  "label": "150 Lau Auditorium",
+  "capacity": 468,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "315",
+  "label": "315 For exams combined with MY 317",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "317",
+  "label": "317 Divider w MY 315",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "320",
+  "label": "320",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "330",
+  "label": "330",
+  "capacity": 72,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "350",
+  "label": "350",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "360",
+  "label": "360",
+  "capacity": 72,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "370",
+  "label": "370",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "380",
+  "label": "380",
+  "capacity": 72,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "420",
+  "label": "420",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "430",
+  "label": "430",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "440",
+  "label": "440",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "480",
+  "label": "480",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "MY",
+  "buildingName": "Myhal Centre MCEIE",
+  "address": "55 St George Street",
+  "room": "490",
+  "label": "490",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "NL",
+  "buildingName": "C David Naylor Building",
+  "address": null,
+  "room": "6",
+  "label": "6 Imperial Oil Lecture",
+  "capacity": 174,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "10200",
+  "label": "10200 CTL Days; ACE(Evening + Wknd)",
+  "capacity": 21,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "10204",
+  "label": "10204",
+  "capacity": 17,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "11200",
+  "label": "11200",
+  "capacity": 15,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "11204",
+  "label": "11204 CTL Days; ACE(Evening + Wknd)",
+  "capacity": 19,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2198",
+  "label": "2198",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2199",
+  "label": "2199",
+  "capacity": 20,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2205",
+  "label": "2205",
+  "capacity": 32,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2211",
+  "label": "2211",
+  "capacity": 32,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2212",
+  "label": "2212",
+  "capacity": 150,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2214",
+  "label": "2214",
+  "capacity": 80,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2227",
+  "label": "2227 Womens Studies(D)/ACE(E+Wknd)",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2279",
+  "label": "2279",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2281",
+  "label": "2281",
+  "capacity": 28,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2286",
+  "label": "2286",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2289",
+  "label": "2289",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2295",
+  "label": "2295",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "2296",
+  "label": "2296",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "3310",
+  "label": "3310",
+  "capacity": 25,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "3311",
+  "label": "3311 Classroom",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "3312",
+  "label": "3312",
+  "capacity": 25,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4410",
+  "label": "4410",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4414",
+  "label": "4414",
+  "capacity": 36,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4416",
+  "label": "4416",
+  "capacity": 36,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4418",
+  "label": "4418",
+  "capacity": 27,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4420",
+  "label": "4420",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4422",
+  "label": "4422",
+  "capacity": 42,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "4426",
+  "label": "4426",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5150",
+  "label": "5150",
+  "capacity": 65,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5160",
+  "label": "5160",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5170",
+  "label": "5170",
+  "capacity": 80,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5230",
+  "label": "5230",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5240",
+  "label": "5240",
+  "capacity": 40,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5250",
+  "label": "5250",
+  "capacity": 59,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5260",
+  "label": "5260",
+  "capacity": 33,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5270",
+  "label": "5270",
+  "capacity": 35,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5280",
+  "label": "5280",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "5290",
+  "label": "5290",
+  "capacity": 35,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "7192",
+  "label": "7192",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8170",
+  "label": "8170",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8180",
+  "label": "8180",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8200",
+  "label": "8200",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8201",
+  "label": "8201",
+  "capacity": 30,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8214",
+  "label": "8214",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8220",
+  "label": "8220",
+  "capacity": 40,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "8280",
+  "label": "8280",
+  "capacity": 24,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "C154",
+  "label": "C154 Drama Studio",
+  "capacity": 50,
+  "seating": "Castered Chairs",
+  "writing": "No Writing"
+ },
+ {
+  "building": "OI",
+  "buildingName": "O.I.S.E.",
+  "address": "252 Bloor Street W.",
+  "room": "G162",
+  "label": "G162 Lower translation booth",
+  "capacity": 508,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "PB",
+  "buildingName": "Leslie Dan Pharmacy Building",
+  "address": "144 College Street",
+  "room": "255",
+  "label": "255 The Pod",
+  "capacity": 48,
+  "seating": "Castered Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "PB",
+  "buildingName": "Leslie Dan Pharmacy Building",
+  "address": "144 College Street",
+  "room": "B150",
+  "label": "B150 OPA Lecture Hall",
+  "capacity": 304,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "PB",
+  "buildingName": "Leslie Dan Pharmacy Building",
+  "address": "144 College Street",
+  "room": "B250",
+  "label": "B250 APOTEX Lecture Hall",
+  "capacity": 244,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "RL",
+  "buildingName": "Robarts Library Building",
+  "address": "130 St. George Street",
+  "room": "14190",
+  "label": "14190 replaces 14081",
+  "capacity": 25,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "1016",
+  "label": "1016 Conference Rm (RSI & SLP)",
+  "capacity": 20,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "207",
+  "label": "207 Case Study room (OT)",
+  "capacity": 8,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "218",
+  "label": "218 Case study room (PT)",
+  "capacity": 8,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "220",
+  "label": "220 Case study room (PT)",
+  "capacity": 8,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "222",
+  "label": "222 Case Study room (SLP)",
+  "capacity": 8,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "224",
+  "label": "224 Case study room (SLP)",
+  "capacity": 8,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "230",
+  "label": "230 Case study room (OT)",
+  "capacity": 8,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "234",
+  "label": "234 Case Study Room (OT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "235",
+  "label": "235 Joyce Howell Mason Rm (OT)",
+  "capacity": 80,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "236",
+  "label": "236 Case Study Room (OT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "238",
+  "label": "238 Case Study Room (SLP)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "240",
+  "label": "240 Case Study Room (SLP)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "251",
+  "label": "251 Case Study Room (SLP)",
+  "capacity": 12,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "255",
+  "label": "255 Case Study Room (SLP)",
+  "capacity": 12,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "256",
+  "label": "256 Case Study Room (OT)",
+  "capacity": 8,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "420",
+  "label": "420 Orthotics Lab (OT)",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "428",
+  "label": "428 Dorothy Baer Rm (RSI)",
+  "capacity": 20,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "444",
+  "label": "444 Medium Classroom (SLP)",
+  "capacity": 59,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "450",
+  "label": "450 Small Group Room",
+  "capacity": 10,
+  "seating": "Stacking Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "452",
+  "label": "452 Medium Classroom (RSS)",
+  "capacity": 40,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "453",
+  "label": "453 Medium Classroom (SLP)",
+  "capacity": 60,
+  "seating": "Stacking Chairs",
+  "writing": "Small Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "490A",
+  "label": "490A (Shared)-RMVD 2013s",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "490B",
+  "label": "490B (Shared)-RMVD 2013s",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "490C",
+  "label": "490C (Shared)-RMVD 2013s",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "490D",
+  "label": "490D (Shared)-RMVD 2013s",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "490E",
+  "label": "490E (Shared)-RMVD 2013s",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "490F",
+  "label": "490F (Shared)-RMVD 2013s",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "492",
+  "label": "492 Small Group Room",
+  "capacity": 10,
+  "seating": "Stacking Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "720",
+  "label": "720 Health Concepts Lab (PT)",
+  "capacity": 5,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "721",
+  "label": "721 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "727",
+  "label": "727 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "730",
+  "label": "730 Clinical Teaching Lab (PT)",
+  "capacity": 80,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "738",
+  "label": "738 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "740",
+  "label": "740 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "744",
+  "label": "744 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "750",
+  "label": "750 Clinical Teaching Lab (PT)",
+  "capacity": 80,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "753",
+  "label": "753 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "758",
+  "label": "758 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "759",
+  "label": "759 Case Study Room (PT)",
+  "capacity": 12,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "760",
+  "label": "760 Clinical Teaching Lab (PT)",
+  "capacity": 80,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "841",
+  "label": "841 Conference Rm (PT)",
+  "capacity": 20,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "907",
+  "label": "907 (OT)",
+  "capacity": 80,
+  "seating": "Specialized Equipment",
+  "writing": "Specialized Equipment"
+ },
+ {
+  "building": "RU",
+  "buildingName": "Rehabilitation Sciences Bdg",
+  "address": null,
+  "room": "954",
+  "label": "954 Cardwell & Robinson Rm (OT)",
+  "capacity": 20,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "RW",
+  "buildingName": "Ramsay Wright Laboratories",
+  "address": "25 Harbord Street",
+  "room": "110",
+  "label": "110",
+  "capacity": 156,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "RW",
+  "buildingName": "Ramsay Wright Laboratories",
+  "address": "25 Harbord Street",
+  "room": "117",
+  "label": "117",
+  "capacity": 156,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "RW",
+  "buildingName": "Ramsay Wright Laboratories",
+  "address": "25 Harbord Street",
+  "room": "140",
+  "label": "140",
+  "capacity": 80,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "RW",
+  "buildingName": "Ramsay Wright Laboratories",
+  "address": "25 Harbord Street",
+  "room": "142",
+  "label": "142 Lecture Room",
+  "capacity": 49,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "RW",
+  "buildingName": "Ramsay Wright Laboratories",
+  "address": "25 Harbord Street",
+  "room": "143",
+  "label": "143 Lecture Room",
+  "capacity": 59,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SF",
+  "buildingName": "Sandford Fleming Building",
+  "address": "10 King's College Road",
+  "room": "1101",
+  "label": "1101",
+  "capacity": 160,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SF",
+  "buildingName": "Sandford Fleming Building",
+  "address": "10 King's College Road",
+  "room": "1105",
+  "label": "1105 Blue Room",
+  "capacity": 222,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SF",
+  "buildingName": "Sandford Fleming Building",
+  "address": "10 King's College Road",
+  "room": "2202",
+  "label": "2202 replaces WB 242",
+  "capacity": 72,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "SF",
+  "buildingName": "Sandford Fleming Building",
+  "address": "10 King's College Road",
+  "room": "3201",
+  "label": "3201 SOTL Classroom",
+  "capacity": 72,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "SF",
+  "buildingName": "Sandford Fleming Building",
+  "address": "10 King's College Road",
+  "room": "3202",
+  "label": "3202",
+  "capacity": 112,
+  "seating": "Stacking Chairs",
+  "writing": "Individual Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "100",
+  "label": "100 Node chairs",
+  "capacity": 26,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "114",
+  "label": "114",
+  "capacity": 29,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "218",
+  "label": "218",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "222",
+  "label": "222",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "346",
+  "label": "346",
+  "capacity": 29,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "348",
+  "label": "348",
+  "capacity": 29,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "418",
+  "label": "418",
+  "capacity": 29,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "548",
+  "label": "548",
+  "capacity": 64,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "620",
+  "label": "620 Modular teaching room",
+  "capacity": 30,
+  "seating": "Castered Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "702",
+  "label": "702",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "SK",
+  "buildingName": "Social Work, Faculty of",
+  "address": "246 Bloor Street West",
+  "room": "720",
+  "label": "720",
+  "capacity": 45,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1069",
+  "label": "1069",
+  "capacity": 97,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1070",
+  "label": "1070",
+  "capacity": 71,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1071",
+  "label": "1071 Replaces SS 2128-2129",
+  "capacity": 101,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1072",
+  "label": "1072",
+  "capacity": 69,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1073",
+  "label": "1073",
+  "capacity": 101,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1074",
+  "label": "1074",
+  "capacity": 69,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1078",
+  "label": "1078 d",
+  "capacity": 25,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1080",
+  "label": "1080 Small Lecture/Seminar",
+  "capacity": 24,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1083",
+  "label": "1083",
+  "capacity": 96,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1084",
+  "label": "1084",
+  "capacity": 55,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1085",
+  "label": "1085",
+  "capacity": 96,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1086",
+  "label": "1086",
+  "capacity": 55,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1087",
+  "label": "1087",
+  "capacity": 96,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "1088",
+  "label": "1088",
+  "capacity": 55,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2101",
+  "label": "2101",
+  "capacity": 21,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2102",
+  "label": "2102",
+  "capacity": 188,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2104",
+  "label": "2104 Replaces 2131 06s",
+  "capacity": 15,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2105",
+  "label": "2105 Replaces 2130 06S",
+  "capacity": 60,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2106",
+  "label": "2106",
+  "capacity": 95,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2108",
+  "label": "2108",
+  "capacity": 95,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2110",
+  "label": "2110 Two stns removed for adj table",
+  "capacity": 93,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2111",
+  "label": "2111",
+  "capacity": 40,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2112",
+  "label": "2112",
+  "capacity": 15,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2114",
+  "label": "2114 Seminar/Collaborative",
+  "capacity": 25,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2116",
+  "label": "2116",
+  "capacity": 15,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2117",
+  "label": "2117",
+  "capacity": 188,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2118",
+  "label": "2118",
+  "capacity": 188,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2119",
+  "label": "2119",
+  "capacity": 15,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2120",
+  "label": "2120 Seminar/Collaborative",
+  "capacity": 14,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2125",
+  "label": "2125",
+  "capacity": 60,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2127",
+  "label": "2127",
+  "capacity": 85,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "2135",
+  "label": "2135 Amphitheatre",
+  "capacity": 188,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SS",
+  "buildingName": "Sidney Smith Hall",
+  "address": "100 St. George Street",
+  "room": "581",
+  "label": "581",
+  "capacity": 48,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "SU",
+  "buildingName": "Student Commons",
+  "address": "230 College Street",
+  "room": "255",
+  "label": "255",
+  "capacity": 55,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SU",
+  "buildingName": "Student Commons",
+  "address": "230 College Street",
+  "room": "432",
+  "label": "432 ARTSC Loan 2023-2024 ES1016M",
+  "capacity": 23,
+  "seating": "Stacking Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "SU",
+  "buildingName": "Student Commons",
+  "address": "230 College Street",
+  "room": "440",
+  "label": "440 Alternate for LM 123",
+  "capacity": 28,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "SU",
+  "buildingName": "Student Commons",
+  "address": "230 College Street",
+  "room": "444",
+  "label": "444 Alternate for LM 157",
+  "capacity": 42,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "SU",
+  "buildingName": "Student Commons",
+  "address": "230 College Street",
+  "room": "B120",
+  "label": "B120 Alternate for LM 158",
+  "capacity": 108,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "TL",
+  "buildingName": "Lawson Centre",
+  "address": null,
+  "room": "1013",
+  "label": "1013",
+  "capacity": 25,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "TL",
+  "buildingName": "Lawson Centre",
+  "address": null,
+  "room": "1014",
+  "label": "1014",
+  "capacity": 25,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "TL",
+  "buildingName": "Lawson Centre",
+  "address": null,
+  "room": "1015",
+  "label": "1015",
+  "capacity": 25,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "TL",
+  "buildingName": "Lawson Centre",
+  "address": null,
+  "room": "1016",
+  "label": "1016",
+  "capacity": 25,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "TL",
+  "buildingName": "Lawson Centre",
+  "address": null,
+  "room": "1017",
+  "label": "1017",
+  "capacity": 25,
+  "seating": "Unknown",
+  "writing": "Unknown"
+ },
+ {
+  "building": "TL",
+  "buildingName": "Lawson Centre",
+  "address": null,
+  "room": "3053",
+  "label": "3053",
+  "capacity": 60,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "140",
+  "label": "140 Has Balcony Amphi",
+  "capacity": 150,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "144",
+  "label": "144",
+  "capacity": 55,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "148",
+  "label": "148",
+  "capacity": 21,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "152",
+  "label": "152",
+  "capacity": 45,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "161",
+  "label": "161 Amphitheatre",
+  "capacity": 97,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "163",
+  "label": "163",
+  "capacity": 56,
+  "seating": "Stacking Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "175",
+  "label": "175",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "177",
+  "label": "177",
+  "capacity": 30,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "179",
+  "label": "179 Media Room",
+  "capacity": 110,
+  "seating": "Theatre Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "244",
+  "label": "244",
+  "capacity": 59,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "248",
+  "label": "248",
+  "capacity": 21,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "255",
+  "label": "255",
+  "capacity": 18,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "256",
+  "label": "256",
+  "capacity": 45,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "257",
+  "label": "257",
+  "capacity": 17,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "261",
+  "label": "261",
+  "capacity": 48,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "44",
+  "label": "44",
+  "capacity": 15,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "51",
+  "label": "51",
+  "capacity": 11,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "52",
+  "label": "52",
+  "capacity": 61,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "53",
+  "label": "53",
+  "capacity": 12,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "55",
+  "label": "55",
+  "capacity": 12,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "57",
+  "label": "57",
+  "capacity": 14,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "63",
+  "label": "63",
+  "capacity": 17,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "65",
+  "label": "65",
+  "capacity": 25,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "67",
+  "label": "67",
+  "capacity": 27,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "69",
+  "label": "69",
+  "capacity": 17,
+  "seating": "Castered Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "85",
+  "label": "85",
+  "capacity": 50,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "87",
+  "label": "87",
+  "capacity": 50,
+  "seating": "Fixed Seating",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "A101",
+  "label": "A101",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "B203",
+  "label": "B203",
+  "capacity": 19,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "UC",
+  "buildingName": "University College",
+  "address": "15 King's College Circle",
+  "room": "D301",
+  "label": "D301",
+  "capacity": 19,
+  "seating": "Stacking Chairs",
+  "writing": "Seminar Tables"
+ },
+ {
+  "building": "WB",
+  "buildingName": "Wallberg Building",
+  "address": "184-200 College Street",
+  "room": "116",
+  "label": "116",
+  "capacity": 240,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WB",
+  "buildingName": "Wallberg Building",
+  "address": "184-200 College Street",
+  "room": "119",
+  "label": "119",
+  "capacity": 62,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WB",
+  "buildingName": "Wallberg Building",
+  "address": "184-200 College Street",
+  "room": "130",
+  "label": "130",
+  "capacity": 80,
+  "seating": "Castered Chairs",
+  "writing": "Castered Tables"
+ },
+ {
+  "building": "WB",
+  "buildingName": "Wallberg Building",
+  "address": "184-200 College Street",
+  "room": "219",
+  "label": "219",
+  "capacity": 62,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WE",
+  "buildingName": "Wetmore Hall-New College",
+  "address": "300 Huron Street",
+  "room": "69",
+  "label": "69",
+  "capacity": 20,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WE",
+  "buildingName": "Wetmore Hall-New College",
+  "address": "300 Huron Street",
+  "room": "74",
+  "label": "74",
+  "capacity": 24,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WE",
+  "buildingName": "Wetmore Hall-New College",
+  "address": "300 Huron Street",
+  "room": "75",
+  "label": "75",
+  "capacity": 26,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WE",
+  "buildingName": "Wetmore Hall-New College",
+  "address": "300 Huron Street",
+  "room": "76",
+  "label": "76",
+  "capacity": 20,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WI",
+  "buildingName": "Wilson Hall-New College",
+  "address": "40 Willcocks Street",
+  "room": "1016",
+  "label": "1016 Amphitheatre",
+  "capacity": 156,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WI",
+  "buildingName": "Wilson Hall-New College",
+  "address": "40 Willcocks Street",
+  "room": "1017",
+  "label": "1017 Amphitheatre",
+  "capacity": 117,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WI",
+  "buildingName": "Wilson Hall-New College",
+  "address": "40 Willcocks Street",
+  "room": "2006",
+  "label": "2006",
+  "capacity": 22,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WI",
+  "buildingName": "Wilson Hall-New College",
+  "address": "40 Willcocks Street",
+  "room": "523",
+  "label": "523",
+  "capacity": 40,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WI",
+  "buildingName": "Wilson Hall-New College",
+  "address": "40 Willcocks Street",
+  "room": "524",
+  "label": "524",
+  "capacity": 50,
+  "seating": "Tablet Arm Chairs",
+  "writing": "Tablet Arm"
+ },
+ {
+  "building": "WO",
+  "buildingName": "Woodsworth College Residence",
+  "address": "321 Bloor Street West",
+  "room": "20",
+  "label": "20",
+  "capacity": 59,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WO",
+  "buildingName": "Woodsworth College Residence",
+  "address": "321 Bloor Street West",
+  "room": "25",
+  "label": "25",
+  "capacity": 55,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WO",
+  "buildingName": "Woodsworth College Residence",
+  "address": "321 Bloor Street West",
+  "room": "30",
+  "label": "30",
+  "capacity": 58,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WO",
+  "buildingName": "Woodsworth College Residence",
+  "address": "321 Bloor Street West",
+  "room": "35",
+  "label": "35",
+  "capacity": 56,
+  "seating": "Stacking Chairs",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WW",
+  "buildingName": "Woodsworth College",
+  "address": "117/119 St. George Street",
+  "room": "119",
+  "label": "119 Woodsworth Classroom",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "WW",
+  "buildingName": "Woodsworth College",
+  "address": "117/119 St. George Street",
+  "room": "120",
+  "label": "120 Woodsworth Classroom",
+  "capacity": 36,
+  "seating": "Castered Chairs",
+  "writing": "Large Tables"
+ },
+ {
+  "building": "WW",
+  "buildingName": "Woodsworth College",
+  "address": "117/119 St. George Street",
+  "room": "121",
+  "label": "121 Woodsworth Classroom",
+  "capacity": 50,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ },
+ {
+  "building": "WW",
+  "buildingName": "Woodsworth College",
+  "address": "117/119 St. George Street",
+  "room": "126",
+  "label": "126 Woodsworth Classroom",
+  "capacity": 80,
+  "seating": "Fixed Seating",
+  "writing": "Continuous Tables"
+ }
+]
