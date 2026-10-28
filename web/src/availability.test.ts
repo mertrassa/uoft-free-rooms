@@ -211,6 +211,47 @@ describe("filters", () => {
   });
 });
 
+describe("labs and department rooms", () => {
+  const lab: Room = { room: "LAB9", label: "LAB9", capacity: null, seating: null, writing: null, dept: true };
+  const withLab: Building = { ...AA, rooms: [...AA.rooms, lab] };
+  const labIndex = buildIndex({ ...data, buildings: [withLab, BB], meetings: [...meetings, ["AA", "LAB9", TUE, h(9), h(10), "ECE241H1F PRA0101"]] });
+
+  it("are hidden by default and don't count toward the building", () => {
+    const v = viewBuilding(withLab, labIndex, at(h(9) + 30));
+    expect(v.rooms.map((r) => r.room.room)).toEqual(["101", "102", "201"]);
+    expect(v.total).toBe(3);
+    expect(v.inUse).toBe(0);
+    expect(v.freeCount).toBe(3);
+  });
+
+  it("show with their class schedule when asked", () => {
+    const v = viewBuilding(withLab, labIndex, at(h(9) + 30), filters({ dept: true }));
+    const status = Object.fromEntries(v.rooms.map((r) => [r.room.room, r.status.kind]));
+    expect(status.LAB9).toBe("busy");
+    expect(v.total).toBe(4);
+    expect(v.freeCount).toBe(3);
+    expect(viewBuilding(withLab, labIndex, at(h(11)), filters({ dept: true })).freeCount).toBe(3); // 101 busy, lab free
+  });
+
+  it("show when searched for by name", () => {
+    const v = viewBuilding(withLab, labIndex, at(h(11)), DEFAULT_FILTERS, new Set(), (k) => k === "AA LAB9");
+    expect(v.rooms.map((r) => r.key)).toEqual(["AA LAB9"]);
+  });
+
+  it("are never best bets", () => {
+    const v = viewBuilding(withLab, labIndex, at(h(11)), filters({ dept: true }));
+    expect(topPicks([v], h(11), 0, 6, 4).map((p) => p.view.key)).not.toContain("AA LAB9");
+  });
+
+  it("don't count against an estimated building's classrooms while hidden", () => {
+    const bLab: Building = { ...BB, rooms: [...BB.rooms, { ...lab }] };
+    const i = buildIndex({ ...data, buildings: [AA, bLab], meetings: [...meetings, ["BB", "LAB9", TUE, h(10), h(11), "X"]] });
+    expect(i.exactBuildings.has("BB")).toBe(false);
+    // At 10:30 two unplaced classes are on: 3 classrooms - 2 = 1, the lab class takes none of them.
+    expect(viewBuilding(bLab, i, at(h(10) + 30)).freeCount).toBe(1);
+  });
+});
+
 describe("freeFor", () => {
   it("treats free-for-the-day as lasting until closing", () => {
     expect(freeFor({ kind: "free", until: null }, DAY_END - 60, 60)).toBe(true);
@@ -297,10 +338,10 @@ describe("time helpers", () => {
 
 describe("readUrl", () => {
   it("parses shared links and ignores junk", () => {
-    expect(readUrl("?date=2026-11-03&t=14:30&for=60&size=small&tables=1&q=BA&demo=1")).toEqual({
+    expect(readUrl("?date=2026-11-03&t=14:30&for=60&size=small&tables=1&labs=1&q=BA&demo=1")).toEqual({
       date: "2026-11-03",
       minute: h(14) + 30,
-      filters: { minFor: 60, size: "small", tables: true, starredOnly: false },
+      filters: { minFor: 60, size: "small", tables: true, starredOnly: false, dept: true },
       query: "BA",
       demo: true,
     });

@@ -1,7 +1,8 @@
 """Merge TTB meetings and LSM rooms into the single file the web app loads.
 
 Output (web/public/data/campus.json):
-    buildings: [{code, name, address, rooms: [{room, label, capacity, seating, writing}]}]
+    buildings: [{code, name, address, rooms: [{room, label, capacity, seating, writing, dept?}]}]
+               (dept: a lab or departmental room LSM doesn't list, known only from class data)
     meetings:  [[building, room or "", day 1-7 (Mon=1), startMin, endMin, "COURSE SECTION"]]
     calendar:  {classesStart, classesEnd, noClasses: [{start, end, label}]} for the session
 
@@ -85,6 +86,13 @@ def main():
     rows = list(slots.values())
     rows += [r for key, r in unplaced.items() if key not in placed]
 
+    # Rooms LSM doesn't book (labs, studios, departmental rooms) but classes meet in. They have
+    # no capacity or seating data; the app hides them unless asked.
+    listed = {(b["code"], r["room"]) for b in buildings.values() for r in b["rooms"]}
+    for code, room in sorted({(r[0], r[1]) for r in rows if r[1]} - listed):
+        buildings[code]["rooms"].append(
+            {"room": room, "label": room, "capacity": None, "seating": None, "writing": None, "dept": True})
+
     calendar = None
     if os.path.exists(args.calendar):
         with open(args.calendar, encoding="utf-8") as f:
@@ -106,7 +114,9 @@ def main():
 
     with_room = sum(1 for r in rows if r[1])
     n_rooms = sum(len(b["rooms"]) for b in buildings.values())
-    print(f"{len(buildings)} buildings, {n_rooms} rooms, {len(rows)} meetings ({with_room} with a room) -> {args.out}")
+    n_dept = sum(1 for b in buildings.values() for r in b["rooms"] if r.get("dept"))
+    print(f"{len(buildings)} buildings, {n_rooms} rooms ({n_dept} labs or departmental), "
+          f"{len(rows)} meetings ({with_room} with a room) -> {args.out}")
 
 
 if __name__ == "__main__":

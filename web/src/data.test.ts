@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import { DAY_END, DAY_START, buildIndex, topPicks, viewBuilding } from "./availability";
+import { DAY_END, DAY_START, DEFAULT_FILTERS, buildIndex, topPicks, viewBuilding } from "./availability";
 import type { CampusData } from "./types";
 
 const load = (name: string): CampusData =>
@@ -16,7 +16,7 @@ for (const name of ["campus.json", "campus.demo.json"]) {
 
     it("has buildings, rooms, meetings and a calendar", () => {
       expect(data.buildings.length).toBeGreaterThan(30);
-      expect(data.buildings.every((b) => b.rooms.length > 0)).toBe(true);
+      expect(data.buildings.every((b) => b.rooms.some((r) => !r.dept))).toBe(true);
       expect(data.meetings.length).toBeGreaterThan(1000);
       expect(data.calendar?.classesStart).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     });
@@ -32,16 +32,23 @@ for (const name of ["campus.json", "campus.demo.json"]) {
     it("gives consistent counts at every quarter hour of the week", () => {
       for (let day = 1; day <= 5; day++) {
         for (let minute = DAY_START; minute < DAY_END; minute += 15) {
-          const views = data.buildings.map((b) => viewBuilding(b, index, { day, minute, classes: true }));
-          for (const v of views) {
-            expect(v.freeCount).toBeGreaterThanOrEqual(0);
-            expect(v.freeCount).toBeLessThanOrEqual(v.building.rooms.length);
-            if (v.exact) {
-              const busy = v.rooms.filter((r) => r.status.kind === "busy").length;
-              expect(v.freeCount + busy).toBe(v.building.rooms.length);
+          for (const dept of [false, true]) {
+            const f = { ...DEFAULT_FILTERS, dept };
+            const views = data.buildings.map((b) => viewBuilding(b, index, { day, minute, classes: true }, f));
+            for (const v of views) {
+              expect(v.freeCount).toBeGreaterThanOrEqual(0);
+              expect(v.freeCount).toBeLessThanOrEqual(v.total);
+              expect(v.rooms).toHaveLength(v.total);
+              if (v.exact) {
+                const busy = v.rooms.filter((r) => r.status.kind === "busy").length;
+                expect(v.freeCount + busy).toBe(v.total);
+              }
+            }
+            for (const p of topPicks(views, minute, 0)) {
+              expect(p.view.status.kind).toBe("free");
+              expect(p.view.room.dept).toBeFalsy();
             }
           }
-          for (const p of topPicks(views, minute, 0)) expect(p.view.status.kind).toBe("free");
         }
       }
     });
