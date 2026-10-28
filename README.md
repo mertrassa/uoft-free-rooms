@@ -101,9 +101,9 @@ npm run build   # static site in web/dist/
 
 With the ACORN pull merged in (Fall 2026: 1,733 courses, 6,883 meetings, all with a room), every
 building with classes has exact per-room Busy/Free status. Graduate courses are partly in: subjects
-A to IMM so far (443 courses, 874 meetings); the rest still need pulling, so buildings with many
-graduate classes in later subjects (e.g. Social Work, OISE's LHA and SJE courses, Law) can look
-emptier than they are. Joint courses (e.g. CSC469H1 with CSC2208H) count once. Without it, Timetable Builder alone has
+A to LHA so far (1,595 of 2,696 courses pulled; 623 have class times, 1,121 meetings); the rest still
+need pulling, so buildings with many graduate classes in later subjects (e.g. Social Work, OISE's
+SJE and later courses) can look emptier than they are. Joint courses (e.g. CSC469H1 with CSC2208H) count once. Without it, Timetable Builder alone has
 the building but not the room, so the app estimates free rooms per building (classrooms minus
 classes in session) and marks those counts with "~". A building switches to exact status once at
 least 90% of its meetings carry a room. Classes in rooms LSM doesn't book (labs, studios,
