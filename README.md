@@ -100,15 +100,16 @@ npm run build   # static site in web/dist/
 ## Accuracy
 
 With the ACORN pull merged in (Fall 2026: 1,733 courses, 6,883 meetings, all with a room), every
-building with classes has exact per-room Busy/Free status. Graduate courses are partly in: subjects
-A to LHA so far (1,595 of 2,696 courses pulled; 623 have class times, 1,121 meetings); the rest still
-need pulling, so buildings with many graduate classes in later subjects (e.g. Social Work, OISE's
-SJE and later courses) can look emptier than they are. Joint courses (e.g. CSC469H1 with CSC2208H) count once. Without it, Timetable Builder alone has
+building with classes has exact per-room Busy/Free status. Graduate and professional-faculty courses
+are in too: 2,694 of 2,696 courses pulled (1,056 have class times, 1,801 meetings). ENV1199YF and
+ENV2000HF return a server error from ACORN every time. Asynchronous online sections and meetings with
+no weekday are skipped. Joint courses (e.g. CSC469H1 with CSC2208H) count once. Without it, Timetable Builder alone has
 the building but not the room, so the app estimates free rooms per building (classrooms minus
 classes in session) and marks those counts with "~". A building switches to exact status once at
 least 90% of its meetings carry a room. Classes in rooms LSM doesn't book (labs, studios,
 departmental rooms) count as placed, since they don't occupy a listed classroom; `build_data.py` adds
 those rooms (marked `dept`) to buildings LSM lists. Another ~100 such rooms are in buildings LSM
 doesn't list at all and aren't shown, since we have no names or addresses for them. A room stays busy
-through back-to-back classes (gaps of 10 minutes or less). Buildings with no classes at all in our
-sources (Exam Centre, Rehabilitation Sciences) show "No class data" instead of a count.
+through back-to-back classes (gaps of 10 minutes or less). Buildings with fewer weekly classes in
+our sources than classrooms show "No class data" instead of a count: the Exam Centre has none, and
+Rehabilitation Sciences has only 3 for 43 rooms, since most of its courses list no times in ACORN.

@@ -175,7 +175,8 @@ export function BuildingCard({
             </a>
             {!view.hasData ? (
               <span className="hint">
-                No classes in ACORN or Timetable Builder are held here. Rooms may be used by other faculties or for exams.
+                ACORN and Timetable Builder list few or no classes here, so we can't tell which rooms are free. Rooms
+                may be used by other faculties or for exams.
               </span>
             ) : (
               !exact && <span className="hint">Room schedules unknown here, so counts are estimates.</span>
