@@ -1,0 +1,73 @@
+# Opened from a room's "Report a class" link in the app, which pre-fills room, day and times
+# (query parameters named after the field ids below).
+name: Report a class in a room
+description: A room shows as free, but a lecture, tutorial or other class meets there.
+title: "Room report: "
+labels: ["room-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Once a maintainer checks the report, the room shows as busy (marked "reported") at that time.
+        Please only report classes that meet regularly, not one-off events.
+  - type: input
+    id: room
+    attributes:
+      label: Room
+      description: Building code and room number.
+      placeholder: SS 2120
+    validations:
+      required: true
+  - type: input
+    id: day
+    attributes:
+      label: Day(s)
+      placeholder: Tue, Thu
+    validations:
+      required: true
+  - type: input
+    id: start
+    attributes:
+      label: Starts
+      placeholder: "2:00 PM"
+    validations:
+      required: true
+  - type: input
+    id: end
+    attributes:
+      label: Ends
+      placeholder: "3:00 PM"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What meets there
+      options:
+        - Tutorial
+        - Lecture
+        - Lab or practical
+        - Seminar
+        - Other recurring booking
+    validations:
+      required: true
+  - type: input
+    id: course
+    attributes:
+      label: Course (if you know it)
+      placeholder: ECO101H1 TUT0301
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often
+      options:
+        - Every week
+        - Most weeks
+        - Some weeks
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: How you know (e.g. "my tutorial is here"), or dates it doesn't meet.

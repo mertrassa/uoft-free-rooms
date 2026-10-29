@@ -18,6 +18,7 @@ import {
   type Filters,
   type Moment,
 } from "./availability";
+import { reportUrl } from "./components";
 import { readUrl } from "./hooks";
 import type { Building, CampusData, Meeting, Room } from "./types";
 
@@ -220,6 +221,66 @@ describe("filters", () => {
   it("caps estimated free counts at the rooms that match", () => {
     const v = viewBuilding(BB, index, at(h(13)), filters({ starredOnly: true }), new Set(["BB 1"]));
     expect(v.freeCount).toBe(1);
+  });
+});
+
+describe("rarely listed rooms", () => {
+  // CC: three rooms with 9-hour weekday schedules, one with a single hour a week.
+  const CC: Building = { code: "CC", name: "Gamma Hall", address: null, rooms: ["1", "2", "3", "4"].map((r) => room(r, 30)) };
+  const busy: Meeting[] = ["1", "2", "3"].flatMap((r) => [1, 2, 3, 4, 5].map((day): Meeting => ["CC", r, day, h(9), h(11), "X"]));
+  const cc = buildIndex({ ...data, buildings: [CC], meetings: [...busy, ["CC", "4", 1, h(9), h(10), "Y"]] });
+
+  it("are flagged against their building, not campus-wide", () => {
+    expect([...cc.rarelyListed]).toEqual(["CC 4"]);
+    expect(index.rarelyListed.size).toBe(0); // AA's rooms are all lightly used, so none stands out
+  });
+
+  it("are never free, but still show listed classes", () => {
+    const v = viewBuilding(CC, cc, at(h(13)));
+    expect(v.rooms.find((r) => r.key === "CC 4")!.status).toEqual({ kind: "unlisted" });
+    expect(v.freeCount).toBe(3);
+    expect(topPicks([v], h(13), 0, 6, 4).map((p) => p.view.key)).not.toContain("CC 4");
+    const mon = viewBuilding(CC, cc, { day: 1, minute: h(9) + 30, classes: true });
+    expect(mon.rooms.find((r) => r.key === "CC 4")!.status.kind).toBe("busy");
+  });
+
+  it("are free on days without classes", () => {
+    expect(viewBuilding(CC, cc, at(h(13), false)).rooms.find((r) => r.key === "CC 4")!.status.kind).toBe("free");
+  });
+});
+
+describe("reported classes", () => {
+  const reported = buildIndex({ ...data, meetings: [...meetings, ["AA", "201", TUE, h(14), h(16), "Tutorial", 1]] });
+
+  it("make a room busy and say so", () => {
+    const v = viewBuilding(AA, reported, at(h(15)));
+    const s = v.rooms.find((r) => r.room.room === "201")!.status;
+    expect(s).toEqual({ kind: "busy", course: "Tutorial", until: h(16), reported: true });
+    expect(viewBuilding(AA, reported, at(h(12))).rooms.find((r) => r.room.room === "201")!.status).toEqual({
+      kind: "free",
+      until: h(14),
+    });
+  });
+
+  it("leave listed classes unmarked", () => {
+    const s = viewBuilding(AA, reported, at(h(11))).rooms.find((r) => r.room.room === "101")!.status;
+    expect(s).toEqual({ kind: "busy", course: "CSC108H1F LEC0101", until: h(12) });
+  });
+});
+
+describe("reportUrl", () => {
+  it("pre-fills the room, day and the hour around the selected time", () => {
+    const u = new URL(reportUrl("SS 2120", TUE, h(14) + 20));
+    expect(u.pathname).toBe("/mertrassa/uoft-free-rooms/issues/new");
+    expect(Object.fromEntries(u.searchParams)).toEqual({
+      template: "room-report.yml",
+      title: "Room report: SS 2120, Tue 2 PM",
+      room: "SS 2120",
+      day: "Tue",
+      start: "2 PM",
+      end: "3 PM",
+    });
+    expect(new URL(reportUrl("SS 2120", 1, h(23))).searchParams.get("start")).toBe("9 PM"); // after hours: last slot
   });
 });
 

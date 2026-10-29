@@ -21,6 +21,8 @@ Find empty classrooms at UofT St. George to study in.
 - **Light, dark or auto theme**, remembered per browser.
 - **Best bets**: the rooms that stay free longest from the chosen time, one per building. Shown only where room schedules are known.
 - **Room timelines**: tap a room to see its classes that day.
+- **Report a class**: each room's timeline has a "Report it" link for classes our sources miss (e.g.
+  department-booked tutorials). It opens a pre-filled GitHub issue; see [Student reports](#student-reports).
 - **Stars**: star buildings or rooms; they sort first and can be filtered to. Saved in the browser.
 - **Directions** to each building, and **shareable links** (the URL keeps the date, time, filters and search).
 - Works on phones; light and dark mode.
@@ -76,6 +78,21 @@ search per subject code:
 python scripts/build_data.py --meetings data/meetings_20269.json data/acorn_meetings_20269.json data/acorn_grad_meetings_20269.json
 ```
 
+### Student reports
+
+Some rooms are booked by departments directly (often tutorials, e.g. SS 2120), so neither ACORN nor
+Timetable Builder lists them. Reports come in as issues labelled `room-report`
+([form](.github/ISSUE_TEMPLATE/room-report.yml)). Once a report looks right, add it to
+`data/reports_<session>.json`, rebuild, and close the issue:
+
+```json
+[{ "building": "SS", "room": "2120", "days": ["Tue", "Thu"], "start": "14:00", "end": "15:00",
+   "label": "Tutorial", "issue": 12 }]
+```
+
+Those rooms then show "Reported class" at those times, hatched in the timeline. A report that overlaps
+a class already listed in that room is skipped.
+
 Demo data (what the app looks like with full room schedules), served at `?demo=1`:
 
 ```bash
@@ -110,6 +127,11 @@ least 90% of its meetings carry a room. Classes in rooms LSM doesn't book (labs,
 departmental rooms) count as placed, since they don't occupy a listed classroom; `build_data.py` adds
 those rooms (marked `dept`) to buildings LSM lists. Another ~100 such rooms are in buildings LSM
 doesn't list at all and aren't shown, since we have no names or addresses for them. A room stays busy
-through back-to-back classes (gaps of 10 minutes or less). Buildings with fewer weekly classes in
+through back-to-back classes (gaps of 10 minutes or less). Showing a busy room as free costs more
+trust than the reverse, so classrooms that are rarely listed while their building is busy (under 6
+weekday hours between 9 and 6, and under a quarter of the building's typical classroom; e.g. SS 2120
+with none, or UC 51) show "Likely booked" instead of free: their department probably books them
+directly, often for tutorials. Fall 2026 has 10 such rooms. Reported classes count toward a room's
+listed hours. Buildings with fewer weekly classes in
 our sources than classrooms show "No class data" instead of a count: the Exam Centre has none, and
 Rehabilitation Sciences has only 3 for 43 rooms, since most of its courses list no times in ACORN.

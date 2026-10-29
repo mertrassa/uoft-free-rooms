@@ -40,8 +40,8 @@ for (const name of ["campus.json", "campus.demo.json"]) {
               expect(v.freeCount).toBeLessThanOrEqual(v.total);
               expect(v.rooms).toHaveLength(v.total);
               if (v.exact) {
-                const busy = v.rooms.filter((r) => r.status.kind === "busy").length;
-                expect(v.freeCount + busy).toBe(v.total);
+                const notFree = v.rooms.filter((r) => r.status.kind === "busy" || r.status.kind === "unlisted").length;
+                expect(v.freeCount + notFree).toBe(v.total);
               }
             }
             for (const p of topPicks(views, minute, 0)) {
@@ -54,6 +54,17 @@ for (const name of ["campus.json", "campus.demo.json"]) {
     });
   });
 }
+
+describe("campus.json rarely listed rooms", () => {
+  const data = load("campus.json");
+  const index = buildIndex(data);
+
+  it("include the department-booked rooms we know about, and stay few", () => {
+    expect(index.rarelyListed.has("SS 2120")).toBe(true);
+    expect(index.rarelyListed.has("UC 51")).toBe(true);
+    expect(index.rarelyListed.size).toBeLessThan(30);
+  });
+});
 
 describe("demo data", () => {
   const data = load("campus.demo.json");

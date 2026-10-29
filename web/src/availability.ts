@@ -7,6 +7,15 @@ export const ROOM_COVERAGE_THRESHOLD = 0.9;
  * users list no times in our sources (e.g. Rehabilitation Sciences, 3 classes for 43 rooms).
  */
 export const MIN_CLASSES_PER_ROOM = 1;
+/**
+ * A classroom listed for fewer weekday daytime hours than both of these is probably booked directly
+ * by its department (tutorials, seminars), not empty: SS 2120 has no listed classes while SS rooms
+ * typically have 33 hours a week. We never show such a room as free.
+ */
+export const RARELY_LISTED_HOURS = 6;
+export const RARELY_LISTED_SHARE = 0.25;
+const LISTED_FROM = 9 * 60;
+const LISTED_TO = 18 * 60;
 
 export const DAY_START = 8 * 60;
 export const DAY_END = 22 * 60;
@@ -35,8 +44,10 @@ export interface Filters {
 export const DEFAULT_FILTERS: Filters = { minFor: 0, size: "any", tables: false, starredOnly: false, dept: false };
 
 export type RoomStatus =
-  | { kind: "busy"; course: string; until: number }
+  | { kind: "busy"; course: string; until: number; reported?: boolean }
   | { kind: "free"; until: number | null }
+  /** No class listed now, but the room is rarely listed at all: likely booked outside our sources. */
+  | { kind: "unlisted" }
   | { kind: "unknown" };
 
 export interface RoomView {
@@ -71,6 +82,8 @@ export interface Index {
   /** Buildings with enough classes in our sources to say anything about them. */
   knownBuildings: Set<string>;
   exactBuildings: Set<string>;
+  /** Room keys ("SS 2120") too rarely listed to trust as free; see RARELY_LISTED_HOURS. */
+  rarelyListed: Set<string>;
 }
 
 export interface Moment {
@@ -103,7 +116,25 @@ export function buildIndex(data: CampusData): Index {
     const placed = list.filter((m) => m[1] !== "").length;
     if (placed / list.length >= ROOM_COVERAGE_THRESHOLD) exactBuildings.add(b.code);
   }
-  return { byBuilding, knownBuildings, exactBuildings };
+
+  // Listed weekday daytime hours per classroom, compared with the building's typical classroom.
+  const rarelyListed = new Set<string>();
+  for (const b of data.buildings) {
+    if (!exactBuildings.has(b.code)) continue;
+    const minutes = new Map<string, number>();
+    for (const m of byBuilding.get(b.code) ?? []) {
+      const overlap = Math.min(m[4], LISTED_TO) - Math.max(m[3], LISTED_FROM);
+      if (m[2] <= 5 && overlap > 0) minutes.set(m[1], (minutes.get(m[1]) ?? 0) + overlap);
+    }
+    const classrooms = b.rooms.filter((r) => !r.dept);
+    const hours = classrooms.map((r) => (minutes.get(r.room) ?? 0) / 60);
+    const sorted = [...hours].sort((a, z) => a - z);
+    const mid = sorted.length / 2;
+    const median = sorted.length % 2 ? sorted[Math.floor(mid)] : (sorted[mid - 1] + sorted[mid]) / 2;
+    const limit = Math.min(RARELY_LISTED_HOURS, RARELY_LISTED_SHARE * median);
+    classrooms.forEach((r, i) => hours[i] < limit && rarelyListed.add(roomKey(b, r)));
+  }
+  return { byBuilding, knownBuildings, exactBuildings, rarelyListed };
 }
 
 const active = (m: Meeting, minute: number) => m[3] <= minute && minute < m[4];
@@ -153,8 +184,12 @@ export function viewBuilding(
       // Busy until the room actually opens up: back-to-back classes (or a gap too short to study) chain.
       let until = current[4];
       for (const m of today) if (m[3] <= until + SHORT_GAP && m[4] > until) until = m[4];
-      return { room, key, today, status: { kind: "busy", course: current[5], until } };
+      const status: RoomStatus = { kind: "busy", course: current[5], until };
+      if (current[6]) status.reported = true;
+      return { room, key, today, status };
     }
+    // Holidays aside, a room its department likely books stays unconfirmed rather than free.
+    if (at.classes && index.rarelyListed.has(key)) return { room, key, today, status: { kind: "unlisted" } };
     if (exact) return { room, key, today, status: { kind: "free", until: next ? next[3] : null } };
     return { room, key, today, status: { kind: "unknown" } };
   });
@@ -181,7 +216,7 @@ export function viewBuilding(
     const knownBusy = new Set(
       meetings.filter((m) => known.has(m[1]) && m[3] < minute + Math.max(filters.minFor, 1) && minute < m[4]).map((m) => m[1]),
     );
-    const candidates = rooms.filter((v) => !knownBusy.has(v.room.room)).length;
+    const candidates = rooms.filter((v) => !knownBusy.has(v.room.room) && v.status.kind !== "unlisted").length;
     freeCount = Math.max(0, Math.min(candidates, total - peak));
   }
 
