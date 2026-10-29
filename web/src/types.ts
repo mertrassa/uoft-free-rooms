@@ -15,8 +15,11 @@ export interface Building {
   rooms: Room[];
 }
 
-/** [building, room ("" if unknown), day 1-7 (Mon=1), startMin, endMin, "COURSE SECTION"] */
-export type Meeting = [string, string, number, number, number, string];
+/**
+ * [building, room ("" if unknown), day 1-7 (Mon=1), startMin, endMin, "COURSE SECTION", reported?]
+ * reported = 1: a class students reported (and a maintainer checked) that our sources don't list.
+ */
+export type Meeting = [string, string, number, number, number, string, 1?];
 
 export interface Calendar {
   classesStart: string;

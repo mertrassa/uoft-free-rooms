@@ -1,6 +1,7 @@
 import {
   DAY_END,
   DAY_START,
+  WEEKDAY_NAMES,
   formatDuration,
   formatTime,
   type BuildingView,
@@ -56,6 +57,23 @@ export function Star({ on, label, onClick }: { on: boolean; label: string; onCli
   );
 }
 
+const REPORT_URL = "https://github.com/mertrassa/uoft-free-rooms/issues/new";
+
+/** A pre-filled report (see .github/ISSUE_TEMPLATE/room-report.yml) for the hour around the selected time. */
+export function reportUrl(key: string, day: number, minute: number): string {
+  const start = Math.min(Math.max(Math.floor(minute / 60) * 60, DAY_START), DAY_END - 60);
+  const dayName = WEEKDAY_NAMES[day - 1].slice(0, 3);
+  const p = new URLSearchParams({
+    template: "room-report.yml",
+    title: `Room report: ${key}, ${dayName} ${formatTime(start)}`,
+    room: key,
+    day: dayName,
+    start: formatTime(start),
+    end: formatTime(start + 60),
+  });
+  return `${REPORT_URL}?${p}`;
+}
+
 function directionsUrl(b: Building) {
   const q = b.address ? `${b.address}, Toronto, ON` : `${b.name}, University of Toronto`;
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
@@ -63,11 +81,12 @@ function directionsUrl(b: Building) {
 
 function statusPill(v: RoomView, minute: number): { cls: string; text: string } {
   const s = v.status;
-  if (s.kind === "busy") return { cls: "busy", text: `In class until ${formatTime(s.until)}` };
+  if (s.kind === "busy") return { cls: "busy", text: `${s.reported ? "Reported class" : "In class"} until ${formatTime(s.until)}` };
   if (s.kind === "free") {
     if (s.until == null) return { cls: "ok", text: "Free rest of day" };
     return { cls: "ok", text: `Free until ${formatTime(s.until)} · ${formatDuration(s.until - minute)}` };
   }
+  if (s.kind === "unlisted") return { cls: "maybe", text: "Likely booked" };
   return { cls: "maybe", text: "Schedule unknown" };
 }
 
@@ -97,6 +116,7 @@ export function TopPicks({ picks, minute, onOpen }: { picks: Pick[]; minute: num
 
 export function BuildingCard({
   view,
+  day,
   minute,
   classes,
   open,
@@ -107,6 +127,7 @@ export function BuildingCard({
   onStar,
 }: {
   view: BuildingView;
+  day: number;
   minute: number;
   classes: boolean;
   open: boolean;
@@ -190,6 +211,7 @@ export function BuildingCard({
                 <RoomRow
                   key={r.key}
                   view={r}
+                  day={day}
                   minute={minute}
                   exact={exact}
                   open={openRoom === r.key}
@@ -208,6 +230,7 @@ export function BuildingCard({
 
 function RoomRow({
   view,
+  day,
   minute,
   exact,
   open,
@@ -216,6 +239,7 @@ function RoomRow({
   onStar,
 }: {
   view: RoomView;
+  day: number;
   minute: number;
   exact: boolean;
   open: boolean;
@@ -244,20 +268,37 @@ function RoomRow({
         <span className={`pill ${pill.cls}`}>{pill.text}</span>
         <Star on={starred} label={view.key} onClick={onStar} />
       </div>
-      {open && <Timeline meetings={view.today} minute={minute} exact={exact} />}
+      {open && (
+        <>
+          <Timeline meetings={view.today} minute={minute} exact={exact} unsure={view.status.kind === "unlisted"} />
+          {view.status.kind === "unlisted" && (
+            <p className="hint timeline-note">
+              This room is rarely in ACORN or Timetable Builder while the rest of the building is busy, so its
+              department probably books it directly (often for tutorials). We don't count it as free.
+            </p>
+          )}
+          <p className="report">
+            Class here that isn't listed?{" "}
+            <a href={reportUrl(view.key, day, minute)} target="_blank" rel="noreferrer">
+              Report it ↗
+            </a>
+          </p>
+        </>
+      )}
     </li>
   );
 }
 
-function Timeline({ meetings, minute, exact }: { meetings: Meeting[]; minute: number; exact: boolean }) {
+function Timeline({ meetings, minute, exact, unsure = false }: { meetings: Meeting[]; minute: number; exact: boolean; unsure?: boolean }) {
   if (!exact) {
     return <p className="hint timeline-note">This room's schedule isn't available yet.</p>;
   }
   return (
     <div className="timeline">
-      <div className="tl-track" aria-hidden="true">
+      <div className={`tl-track ${unsure ? "unsure" : ""}`} aria-hidden="true">
         {meetings.map((m, i) => (
-          <span key={i} className="tl-block" style={{ left: pct(m[3]), width: `calc(${pct(m[4])} - ${pct(m[3])})` }} />
+          <span key={i} className={`tl-block ${m[6] ? "reported" : ""}`}
+            style={{ left: pct(m[3]), width: `calc(${pct(m[4])} - ${pct(m[3])})` }} />
         ))}
         {minute >= DAY_START && minute < DAY_END && <span className="tl-now" style={{ left: pct(minute) }} />}
       </div>
@@ -269,7 +310,7 @@ function Timeline({ meetings, minute, exact }: { meetings: Meeting[]; minute: nu
         ))}
       </div>
       {meetings.length === 0 ? (
-        <p className="hint">No classes in this room today.</p>
+        <p className="hint">No classes listed in this room today.</p>
       ) : (
         <ul className="tl-list">
           {meetings.map((m, i) => (
@@ -277,7 +318,10 @@ function Timeline({ meetings, minute, exact }: { meetings: Meeting[]; minute: nu
               <span className="tl-time">
                 {formatTime(m[3])}–{formatTime(m[4])}
               </span>
-              <span>{m[5]}</span>
+              <span>
+                {m[5]}
+                {m[6] ? <span className="tl-tag" title="Reported by students, not listed in ACORN or Timetable Builder"> reported</span> : null}
+              </span>
             </li>
           ))}
         </ul>

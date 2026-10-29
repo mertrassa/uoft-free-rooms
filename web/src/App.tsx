@@ -286,6 +286,7 @@ export default function App() {
                   <BuildingCard
                     key={v.building.code}
                     view={v}
+                    day={day}
                     minute={minute}
                     classes={termDay.classes}
                     open={openBuilding === v.building.code}
