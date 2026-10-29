@@ -57,7 +57,45 @@ export function Star({ on, label, onClick }: { on: boolean; label: string; onCli
   );
 }
 
-const REPORT_URL = "https://github.com/mertrassa/uoft-free-rooms/issues/new";
+export const REPO_URL = "https://github.com/mertrassa/uoft-free-rooms";
+export const CONTRIBUTING_URL = `${REPO_URL}/blob/main/CONTRIBUTING.md`;
+const REPORT_URL = `${REPO_URL}/issues/new`;
+export const REPORT_FORM_URL = `${REPORT_URL}?template=room-report.yml`;
+
+/** Invites viewers to report their own classes that our sources miss. */
+export function Contribute({ onDismiss }: { onDismiss: () => void }) {
+  return (
+    <section className="banner contribute" aria-labelledby="contribute-h">
+      <button className="contribute-x" aria-label="Dismiss" title="Dismiss" onClick={onDismiss}>
+        ×
+      </button>
+      <h2 id="contribute-h">Free Rooms is open source and built together</h2>
+      <p>
+        Class times come from ACORN and Timetable Builder, but some tutorials, labs and lectures aren't listed there.
+        If one of yours meets in a room shown here as free, we'd be grateful if you let us know: open the room and
+        tap <strong>Report it</strong>. Every report makes the app more accurate for everyone.
+      </p>
+      <p>
+        Anyone is welcome to help build it, too: ideas, design, code or checking reports. The code is{" "}
+        <a href={REPO_URL} target="_blank" rel="noreferrer">
+          on GitHub
+        </a>
+        , and pull requests are welcome.
+      </p>
+      <p className="contribute-actions">
+        <a className="btn ghost" href={REPORT_FORM_URL} target="_blank" rel="noreferrer">
+          Report a class ↗
+        </a>
+        <a href={CONTRIBUTING_URL} target="_blank" rel="noreferrer">
+          How to contribute
+        </a>
+        <button className="link-btn" onClick={onDismiss}>
+          Maybe later
+        </button>
+      </p>
+    </section>
+  );
+}
 
 /** A pre-filled report (see .github/ISSUE_TEMPLATE/room-report.yml) for the hour around the selected time. */
 export function reportUrl(key: string, day: number, minute: number): string {

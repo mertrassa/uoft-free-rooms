@@ -17,9 +17,17 @@ import {
   type Pick,
   type Size,
 } from "./availability";
-import { BuildingCard, ThemeSwitch, TopPicks } from "./components";
+import {
+  BuildingCard,
+  CONTRIBUTING_URL,
+  Contribute,
+  REPORT_FORM_URL,
+  REPO_URL,
+  ThemeSwitch,
+  TopPicks,
+} from "./components";
 import { DatePicker } from "./DatePicker";
-import { readUrl, useStarred, useTheme, writeUrl } from "./hooks";
+import { readUrl, useDismissed, useStarred, useTheme, writeUrl } from "./hooks";
 import type { CampusData } from "./types";
 
 const WINDOWS = [
@@ -46,6 +54,7 @@ export default function App() {
   const [openRoom, setOpenRoom] = useState<string | null>(null);
   const [starred, toggleStar] = useStarred();
   const [theme, setTheme] = useTheme();
+  const [contributeClosed, closeContribute] = useDismissed("contribute");
   const demo = initial.demo;
 
   useEffect(() => {
@@ -275,6 +284,8 @@ export default function App() {
               </p>
             )}
 
+            {!demo && !contributeClosed && <Contribute onDismiss={closeContribute} />}
+
             <TopPicks picks={picks} minute={minute} onOpen={openPick} />
 
             <h2 className="list-h">Buildings</h2>
@@ -307,8 +318,23 @@ export default function App() {
                 Covers centrally booked classrooms only. Rooms can still be booked for events, exams or meetings.
               </p>
               <p>
+                Free Rooms gets better with every report. Is one of your tutorials, labs or lectures missing?{" "}
+                <a href={REPORT_FORM_URL} target="_blank" rel="noreferrer">
+                  Report a class
+                </a>
+                . It's open source (
+                <a href={`${REPO_URL}/blob/main/LICENSE`} target="_blank" rel="noreferrer">
+                  GPL-3.0
+                </a>
+                ) and{" "}
+                <a href={CONTRIBUTING_URL} target="_blank" rel="noreferrer">
+                  open to contributions
+                </a>
+                .
+              </p>
+              <p>
                 A student project. Not affiliated with or endorsed by the University of Toronto. If this use of ACORN data
-                isn't permitted, please <a href="https://github.com/mertrassa/uoft-free-rooms/issues">let the maintainer know</a>:
+                isn't permitted, please <a href={`${REPO_URL}/issues`}>let the maintainer know</a>:
                 it will be removed and room data will come from student reports instead.
               </p>
             </footer>
