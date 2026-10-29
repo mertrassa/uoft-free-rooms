@@ -20,6 +20,16 @@
       rel="stylesheet"
     />
     <title>Free Rooms · St. George</title>
+    <script>
+      // GoatCounter visit counts (no cookies). Count the page without its query string, so the
+      // date, time, filters and search in shared links stay private; only the demo is kept apart.
+      window.goatcounter = {
+        path: function () {
+          return location.pathname + (/[?&]demo=1\b/.test(location.search) ? "?demo=1" : "");
+        },
+      };
+    </script>
+    <script data-goatcounter="https://mertrassa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   </head>
   <body>
     <div id="root"></div>

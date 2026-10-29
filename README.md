@@ -111,6 +111,10 @@ python scripts/build_data.py --demo --meetings data/mock_meetings_20269.json --o
 
 https://mertrassa.github.io/uoft-free-rooms/ (deployed by `.github/workflows/pages.yml` on every push to `main`).
 
+Visits are counted with [GoatCounter](https://www.goatcounter.com/), which sets no cookies and
+stores no personal data. It records the page without its query string, so the date, time, filters
+and search in shared links aren't sent; `?demo=1` is the one exception. Local dev servers aren't counted.
+
 ## Run and test
 
 ```bash
