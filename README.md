@@ -1,6 +1,11 @@
 # Free Rooms · UofT
 
-Find empty classrooms at UofT St. George to study in.
+Find empty classrooms at UofT St. George to study in. Live at
+**https://mertrassa.github.io/uoft-free-rooms/**.
+
+Free Rooms is an open source, student-run project, and everyone is welcome to take part: report a
+class we're missing, check other people's reports, suggest ideas, or send a pull request. Start
+with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > **About the ACORN data.** Room numbers for classes come from ACORN, read one course at a time
 > with a student's own login, the same way the course details pop-up shows them. If this use of
@@ -23,6 +28,8 @@ Find empty classrooms at UofT St. George to study in.
 - **Room timelines**: tap a room to see its classes that day.
 - **Report a class**: each room's timeline has a "Report it" link for classes our sources miss (e.g.
   department-booked tutorials). It opens a pre-filled GitHub issue; see [Student reports](#student-reports).
+  A message at the top (dismissible, remembered per browser) and a footer line invite students to
+  report their own classes we're missing.
 - **Stars**: star buildings or rooms; they sort first and can be filtered to. Saved in the browser.
 - **Directions** to each building, and **shareable links** (the URL keeps the date, time, filters and search).
 - Works on phones; light and dark mode.
@@ -113,6 +120,20 @@ npm run dev     # http://localhost:5173, demo at http://localhost:5173/?demo=1
 npm test        # logic tests plus checks on both shipped data files
 npm run build   # static site in web/dist/
 ```
+
+## Contributing
+
+Contributions of every size are welcome, from a one-line fix to a new feature. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for how to set up, what to work on, and how pull requests are
+reviewed. Issues labelled [`room-report`](https://github.com/mertrassa/uoft-free-rooms/labels/room-report)
+are classes students have reported; help checking them is always appreciated.
+
+## License
+
+The code is free software under the [GNU General Public License v3.0](LICENSE): you may use, study,
+change and share it, and anything you distribute that builds on it must be under the GPL too. The
+class and room data in `data/` and `web/public/data/` come from University of Toronto sources and
+aren't covered by this license.
 
 ## Accuracy
 

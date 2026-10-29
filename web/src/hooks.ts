@@ -31,6 +31,27 @@ export function useTheme(): [Theme, (t: Theme) => void] {
   return [theme, setTheme];
 }
 
+/** A message the viewer closed, remembered in this browser (or for this visit if storage is blocked). */
+export function useDismissed(key: string): [boolean, () => void] {
+  const storageKey = `freerooms:dismissed:${key}`;
+  const [dismissed, setDismissed] = useState(() => {
+    try {
+      return localStorage.getItem(storageKey) === "1";
+    } catch {
+      return false;
+    }
+  });
+  const dismiss = useCallback(() => {
+    setDismissed(true);
+    try {
+      localStorage.setItem(storageKey, "1");
+    } catch {
+      // storage blocked: hidden for this visit only
+    }
+  }, [storageKey]);
+  return [dismissed, dismiss];
+}
+
 /** Starred buildings ("BA") and rooms ("BA 1200"), kept in this browser only. */
 export function useStarred(): [Set<string>, (key: string) => void] {
   const [starred, setStarred] = useState<Set<string>>(() => {
