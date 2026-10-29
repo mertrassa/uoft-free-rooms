@@ -2,6 +2,11 @@ import type { Building, Calendar, CampusData, Meeting, Room } from "./types";
 
 /** Share of a building's meetings that must carry a room before we trust per-room status. */
 export const ROOM_COVERAGE_THRESHOLD = 0.9;
+/**
+ * Weekly classes per classroom below which a building's schedule is too thin to trust: its main
+ * users list no times in our sources (e.g. Rehabilitation Sciences, 3 classes for 43 rooms).
+ */
+export const MIN_CLASSES_PER_ROOM = 1;
 
 export const DAY_START = 8 * 60;
 export const DAY_END = 22 * 60;
@@ -63,6 +68,8 @@ export interface BuildingView {
 
 export interface Index {
   byBuilding: Map<string, Meeting[]>;
+  /** Buildings with enough classes in our sources to say anything about them. */
+  knownBuildings: Set<string>;
   exactBuildings: Set<string>;
 }
 
@@ -82,16 +89,21 @@ export function buildIndex(data: CampusData): Index {
     if (list) list.push(m);
     else byBuilding.set(m[0], [m]);
   }
+  const knownBuildings = new Set<string>();
   const exactBuildings = new Set<string>();
   for (const b of data.buildings) {
     const list = byBuilding.get(b.code) ?? [];
+    // No (or almost no) classes means its users aren't in our sources (e.g. exams, faculties that
+    // list no times), not that it's empty.
+    const classrooms = b.rooms.filter((r) => !r.dept).length;
+    if (list.length === 0 || list.length < classrooms * MIN_CLASSES_PER_ROOM) continue;
+    knownBuildings.add(b.code);
     // A class in a room LSM doesn't book (a lab, studio, departmental room) still has a known
     // place: it just doesn't occupy any classroom we list.
     const placed = list.filter((m) => m[1] !== "").length;
-    // No classes at all means its users aren't in our sources (e.g. exams, faculties outside TTB), not that it's empty.
-    if (list.length > 0 && placed / list.length >= ROOM_COVERAGE_THRESHOLD) exactBuildings.add(b.code);
+    if (placed / list.length >= ROOM_COVERAGE_THRESHOLD) exactBuildings.add(b.code);
   }
-  return { byBuilding, exactBuildings };
+  return { byBuilding, knownBuildings, exactBuildings };
 }
 
 const active = (m: Meeting, minute: number) => m[3] <= minute && minute < m[4];
@@ -125,7 +137,7 @@ export function viewBuilding(
 ): BuildingView {
   const meetings = at.classes ? (index.byBuilding.get(b.code) ?? []).filter((m) => m[2] === at.day) : [];
   const exact = index.exactBuildings.has(b.code) || !at.classes;
-  const hasData = index.byBuilding.has(b.code) || !at.classes;
+  const hasData = index.knownBuildings.has(b.code) || !at.classes;
   const known = new Set(b.rooms.map((r) => r.room));
   // Hidden labs don't take up a classroom, so their classes don't count against the free ones.
   const hidden = new Set(filters.dept ? [] : b.rooms.filter((r) => r.dept).map((r) => r.room));

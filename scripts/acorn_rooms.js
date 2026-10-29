@@ -109,7 +109,7 @@ async function acornRooms(courses, { delayMs = 2000, maxErrors = 5, checkpointEv
       for (const s of body.responseObject?.meetings ?? []) {
         if (s.cancelled) continue;
         for (const t of s.times ?? []) {
-          if (!t.buildingCode || !t.day) continue; // online / TBA
+          if (!t.buildingCode || !DAYS[t.day?.index]) continue; // online / TBA, or no weekday
           state.rows.push({
             course,
             section: `${s.teachMethod}${s.sectionNo}`,

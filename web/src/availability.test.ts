@@ -69,7 +69,10 @@ describe("buildIndex", () => {
   });
 
   it("counts classes in rooms LSM doesn't list as placed, without booking a listed room", () => {
-    const lab = buildIndex({ ...data, meetings: [["AA", "LAB9", TUE, h(9), h(10), "X"]] });
+    const lab = buildIndex({
+      ...data,
+      meetings: [1, 2, 3].map((day): Meeting => ["AA", "LAB9", day, h(9), h(10), "X"]),
+    });
     expect(lab.exactBuildings.has("AA")).toBe(true);
     const v = viewBuilding(AA, lab, at(h(9) + 30));
     expect(v.freeCount).toBe(AA.rooms.length);
@@ -81,6 +84,15 @@ describe("buildIndex", () => {
       meetings: [["AA", "101", TUE, h(9), h(10), "X"], ["AA", "", TUE, h(9), h(10), "Y"]],
     });
     expect(some.exactBuildings.has("AA")).toBe(false);
+  });
+
+  it("doesn't trust a building with fewer weekly classes than classrooms", () => {
+    const thin = buildIndex({ ...data, meetings: [["AA", "101", TUE, h(9), h(10), "X"], ["AA", "102", 3, h(9), h(10), "Y"]] });
+    expect(thin.knownBuildings.has("AA")).toBe(false);
+    expect(thin.exactBuildings.has("AA")).toBe(false);
+    const v = viewBuilding(AA, thin, at(h(11)));
+    expect(v.hasData).toBe(false);
+    expect(v.freeCount).toBe(0);
   });
 
   it("doesn't claim a building with no class data is free", () => {

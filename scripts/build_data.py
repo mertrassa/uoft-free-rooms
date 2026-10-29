@@ -65,6 +65,8 @@ def main():
                     continue
                 if m["building"] not in buildings:
                     continue  # departmental building, no LSM room list
+                if m["day"] not in DAY_INDEX:
+                    continue  # no weekday (asynchronous online sections, day TBA)
                 key = (m["course"], m["section"], m["day"], m["start"])
                 row = [m["building"], m["room"], DAY_INDEX[m["day"]],
                        minutes(m["start"]), minutes(m["end"]), f'{m["course"]} {m["section"]}']
